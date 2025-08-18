@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 
 //The file path for the SQLite database.
 const DB_PATH = process.env.DB_PATH || './elevator.db';
+//database object.
 let db;
 
 // Wrapper for SQLite methods to use async/await
@@ -34,9 +35,10 @@ const dbAll = (query, params = []) => {
     });
 };
 
+//create tables and ppulate elevators.
 const initializeDb = async () => {
     //The number of elevators in the building.
-    const numElevators = parseInt(process.env.NUM_ELEVATORS, 10) || 3;
+    const numElevators = parseInt(process.env.NUM_ELEVATORS, 10) || 5;
     db = new sqlite3.Database(DB_PATH, (err) => {
         if (err) {
             console.error('Error opening database:', err.message);
