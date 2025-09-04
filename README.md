@@ -1,4 +1,3 @@
-Based on the GitHub README.md text you provided, here is the updated version with appropriate icons added to the headers.
 
 # **Elevator API** 🏢
 
