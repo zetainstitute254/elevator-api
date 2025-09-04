@@ -169,7 +169,7 @@ Time:        ...
 
 ### **Live API Link** 🌐🔗
 
-https://elevator-api-33fb.onrender.com
+https://elevator-api-33fb.onrender.com/api/elevator/logs
 
 
 
