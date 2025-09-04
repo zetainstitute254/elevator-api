@@ -21,10 +21,13 @@ db.initializeDb().then(() => {
         const trackingInfo = {
             who: 'API_Client', 
             where: req.ip,
-            what: '${req.method} ${req.originalUrl}'
+            what: `${req.method} ${req.originalUrl}`
         };
+
+        console.log(`${req.method} ${req.originalUrl}`);
+
         db.logSql({
-            query_text: 'Logged API request: ${req.method} ${req.path}',
+            query_text: `Logged API request: ${req.method} ${req.path}`,
             ...trackingInfo
         });
         next();
@@ -33,7 +36,7 @@ db.initializeDb().then(() => {
     app.use('/api/elevator', elevatorRoutes);
 
     app.listen(PORT, () => {
-        console.log('Elevator API server listening on port ${PORT}');
+        console.log(`Elevator API server listening on port ${PORT}`);
     });
 }).catch(err => {
     console.error("Failed to initialize database:", err);

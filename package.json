@@ -7,7 +7,7 @@
     "start": "node app.js",
     "test": "jest"
   },
-  "author": "",
+  "author": "Kevin Mutugi Kithinji",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.2.1",

@@ -1,12 +1,16 @@
-# Elevator API
+Based on the GitHub README.md text you provided, here is the updated version with appropriate icons added to the headers.
 
-### Project Description
+# **Elevator API** 🏢
+
+### **Project Description** 📝
 
 This project provides a robust, well-documented API for a simulated elevator system. It is built using Node.js, Express, and a SQLite database. The API allows for asynchronous elevator movement, real-time status tracking, and comprehensive event logging.
 
 The solution is designed with a clear **Separation of Concerns**, making it scalable and easy for a team to maintain.
 
-### Features
+-----
+
+### **Features** ✨
 
   * **Asynchronous Movement:** Elevators operate independently, with all actions logged in real-time.
   * **Two Primary Endpoints:**
@@ -17,19 +21,23 @@ The solution is designed with a clear **Separation of Concerns**, making it scal
   * **Persistent Storage:** All data (elevator state and logs) is stored in a SQLite database.
   * **Comprehensive Unit Tests:** The API includes unit tests to ensure reliability and correct functionality.
 
-### Prerequisites
+-----
+
+### **Prerequisites** 🛠️
 
 Before you begin, ensure you have the following software installed on your system:
 
   * **Node.js**: Version 14 or higher.
   * **npm**: The Node Package Manager, which comes bundled with Node.js.
 
-### Installation
+-----
+
+### **Installation** 💻
 
 1.  **Clone the repository:**
 
     ```bash
-    git clone  https://github.com/iProjects/elevator-api.git 
+    git clone  https://github.com/iProjects/elevator-api.git
     cd elevator-api
     ```
 
@@ -40,7 +48,9 @@ Before you begin, ensure you have the following software installed on your syste
     npm install
     ```
 
-### Configuration
+-----
+
+### **Configuration** ⚙️
 
 The application uses an `.env` file for configuration. This file is not included in the repository for security reasons.
 
@@ -66,7 +76,9 @@ The application uses an `.env` file for configuration. This file is not included
     DOOR_ACTION_TIME_MS=2000
     ```
 
-### Running the Application
+-----
+
+### **Running the Application** ▶️
 
 To start the API server, use the following command:
 
@@ -82,11 +94,13 @@ Initialized 5 elevators.
 Elevator API server listening on port 3000
 ```
 
-### API Endpoints
+-----
+
+### **API Endpoints** 🌐
 
 Once the server is running, you can use tools like `curl`, Postman, or VS Code's REST Client to interact with the API.
 
-#### 1\. Call an Elevator
+#### **1. Call an Elevator** 📞
 
   * **URL:** `http://localhost:3000/api/elevator/call`
   * **Method:** `POST`
@@ -109,7 +123,7 @@ Once the server is running, you can use tools like `curl`, Postman, or VS Code's
     }
     ```
 
-#### 2\. Get Elevator Status
+#### **2. Get Elevator Status** 📊
 
   * **URL:** `http://localhost:3000/api/elevator/status`
   * **Method:** `GET`
@@ -132,7 +146,9 @@ Once the server is running, you can use tools like `curl`, Postman, or VS Code's
     ]
     ```
 
-### Running Tests
+-----
+
+### **Running Tests** ✅
 
 Unit tests are included to ensure the API's reliability. To run the tests, execute the following command:
 
@@ -148,6 +164,16 @@ PASS  tests/elevator.test.js
     ... (test results) ...
 
 Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
+Tests:      4 passed, 4 total
 Time:        ...
 ```
+
+### **Live API Link** 🌐🔗
+
+https://elevator-api-33fb.onrender.com
+
+
+
+
+
+
